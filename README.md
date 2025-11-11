@@ -96,6 +96,10 @@ User-supplied input from the search parameter is rendered into the HTML response
 
 
 
+https://github.com/user-attachments/assets/aacab74b-4ca0-4705-ab68-cf7eafd2d856
+
+
+
 
 
 
