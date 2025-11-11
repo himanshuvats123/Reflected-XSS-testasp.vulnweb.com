@@ -85,9 +85,17 @@ User-supplied input from the search parameter is rendered into the HTML response
 
 7.Raw payloads & commands:
 
-<script>alert(1)</script>
+1.<script>alert(1)</script>
 
-"><script>alert(1)</script>
+2."><script>alert(1)</script>
+
+3.<script>alert(123)</script>
+
+
+8.POC VIDEO:
+
+
+
 
 
 
