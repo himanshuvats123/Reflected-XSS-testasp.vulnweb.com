@@ -50,6 +50,12 @@ Open the URL. If reflected unencoded, an alert(1) will appear confirming reflect
 
 
 
+
+![Image](https://github.com/user-attachments/assets/7f0397ab-ea7d-4b92-82c3-806bdad9e7c1)
+
+
+
+
 Browser (form input):
 
 1.Go to http://testasp.vulnweb.com/Search.asp.
