@@ -5,7 +5,7 @@ Reflected Cross-Site Scripting (XSS) is a common web application vulnerability t
 
 
 
-Vulnerability summary:
+1.Vulnerability summary:
 
 Type: Reflected Cross-Site Scripting (XSS)
 
@@ -22,7 +22,7 @@ Severity: Medium to High (depends on surrounding controls: HttpOnly, SameSite, C
 
 
 
-Responsible disclosure note:
+2.Responsible disclosure note:
 
 This PoC is provided for educational / authorized security testing only. vulnweb.com is a deliberately vulnerable testing site operated by Acunetix — use responsibly. Do not test sites you do not have explicit permission to test.
 
@@ -30,7 +30,7 @@ This PoC is provided for educational / authorized security testing only. vulnweb
 
 
 
-Affected resource:
+3.Affected resource:
 
 URL: http://testasp.vulnweb.com/Search.asp
 
@@ -40,7 +40,7 @@ Location: Search input field (query parameter Search reflected into response)
 
 
 
-Proof of concept (PoC):
+4.Proof of concept (PoC):
 
 Browser (address bar)
 http://testasp.vulnweb.com/Search.asp?Search=abc%3Cscript%3Ealert(1)%3C%2Fscript%3E
@@ -56,7 +56,7 @@ Open the URL. If reflected unencoded, an alert(1) will appear confirming reflect
 
 
 
-Browser (form input):
+5.Browser (form input):
 
 1.Go to http://testasp.vulnweb.com/Search.asp.
 
@@ -69,6 +69,14 @@ curl -v "http://testasp.vulnweb.com/Search.asp?Search=%3Cscript%3Ealert(1)%3C%2F
 
 
 ![Image](https://github.com/user-attachments/assets/f2ebbfa1-fcc6-41a3-846a-336c52bd2330)
+
+
+
+6.Technical detail / root cause
+
+User-supplied input from the search parameter is rendered into the HTML response without proper context-sensitive encoding. HTML special characters (<, >, &, ", ') are not escaped, so injected markup is executed by the browser.
+
+
 
 
 
